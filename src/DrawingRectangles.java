@@ -20,7 +20,16 @@ public class DrawingRectangles extends JFrame {
 
 
 
+        add(canvas);
+        setVisible(true);
+    }
 
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(DrawingRectangles::new);
+    }
+
+    class Canvas extends JPanel {
+        @Override
         protected void paintComponent(Graphics g) {
             super.paintComponent(g);
             if (drawing) {

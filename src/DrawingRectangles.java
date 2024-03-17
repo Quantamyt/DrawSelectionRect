@@ -5,4 +5,8 @@ import java.awt.event.MouseEvent;
 
 public class DrawingRectangles extends JFrame {
 
+    private int startX, startY, endX, endY;
+    private boolean drawing;
+
+
 }

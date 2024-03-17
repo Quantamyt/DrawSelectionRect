@@ -14,7 +14,14 @@ public class DrawingRectangles extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
-
+        Canvas canvas = new Canvas();
+        canvas.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mousePressed(MouseEvent e) {
+                startX = e.getX();
+                startY = e.getY();
+                drawing = true;
+            }
 
             @Override
             public void mouseReleased(MouseEvent e) {

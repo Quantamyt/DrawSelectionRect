@@ -16,7 +16,14 @@ public class DrawingRectangles extends JFrame {
 
 
 
-
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                endX = e.getX();
+                endY = e.getY();
+                drawing = false;
+                canvas.repaint();
+            }
+        });
 
         canvas.addMouseMotionListener(new MouseAdapter() {
             @Override

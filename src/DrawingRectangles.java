@@ -21,6 +21,15 @@ public class DrawingRectangles extends JFrame {
 
 
 
-
+        protected void paintComponent(Graphics g) {
+            super.paintComponent(g);
+            if (drawing) {
+                int width = Math.abs(endX - startX);
+                int height = Math.abs(endY - startY);
+                int x = Math.min(startX, endX);
+                int y = Math.min(startY, endY);
+                g.drawRect(x, y, width, height);
+            }
+        }
     }
 }

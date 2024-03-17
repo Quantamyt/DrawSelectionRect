@@ -5,6 +5,14 @@ import java.awt.event.MouseEvent;
 
 public class DrawingRectangles extends JFrame {
 
+    /*
+
+    @author quantam (https://github.com/Quantamyt)
+    17th of March 2024 at 22:36
+
+     */
+
+
     private int startX, startY, endX, endY;
     private boolean drawing;
 
